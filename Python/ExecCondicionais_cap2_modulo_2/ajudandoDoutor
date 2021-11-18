@@ -1,0 +1,23 @@
+# Quando a máquina começa a tomar decisõesPágina 20Figura 2.8–Realização de testes lógicos utilizando o andFonte:
+# Elaborado pelo autor(2020)Isso  ocorreu  porque  o  primeiro  teste  (1==1)  era  verdadeiro,
+# mas  o  segundo teste era falso.O  Python  tem  uma  característica  especial  que não  está  presentena
+# maior parte das outras linguagens de programação. Ele permite a avaliação de condições em cadeia.
+# Para comparar se a variável a é maior que a variável b e, ao mesmo tempo, maior que a variável c,
+# podemos escrever de duas formas: “a>b and a>c” ou “a>b>c”.
+# É importante ter atenção à linguagem com que se deseja trabalhar para não tentar utilizar um recurso
+# inexistente.2.4Hora da práticaProblemas envolvendo desvios condicionais não faltam! Vamos encarar alguns
+# deles e entender como podemos utilizar o Python para facilitar nossa vida!2.4.1 Ajudando o doutor!O
+# doutor  Henry  Jones  Junior  estabeleceu  uma  regra  com  seus  alunos  da disciplina de Arqueologia:
+# todos os que obtiverem nota maior do que 8,5 na sua prova semestral serão convidados para uma visita de
+# campo na América do Sul.Nosso programa deve solicitar o e-mail e a nota do aluno, exibindo a mensagem
+# “ENVIANDO CONVITE” caso a nota do aluno satisfaça a condição proposta.Utilizando   apenas   um   if
+# simples,podemos   resolver   esse   problema rapidamente! Basta solicitarmos a digitação dos dados,
+# converter a nota para números reais (float) e verificar se ela atende à condição do professor Jones.
+
+#solicitando os dados do aluno
+email_aluno = input("Informe o e-mail do aluno")
+nota_semestral  =  input("Informe  a  nota  semestral  do aluno: ")
+#convertendo a nota para o formato float
+nota_semestral = float(nota_semestral)
+#realizando o teste lógico
+if nota_semestral > 8.5:print("ENVIANDO E-MAIL PARA {}".format(email_aluno))
